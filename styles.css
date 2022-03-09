@@ -1,34 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
 :root {
     --bg-color: #121212;
     --bg-accent: #1a1a1a;
     --text-color: #b3b3b3;
     --header-text-color: #fff;
-    --link-color: #cc9543;
+    --link-color: #91b7c7;
+    --shadow-color: #91b7c7;
+    --sitewide-font: 'Rubik'
 }
 
 body {
     box-sizing: border-box;
     background-color: var(--bg-color);
     color: var(--text-color);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--sitewide-font), Helvetica, sans-serif;
 }
 
-#container {
+.container {
+    /* bg color for the sake of debugging */
+    position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     text-align: center;
-}
-
-#main {
-    padding-top: 1em;
-    padding-bottom: 1em;
+    padding: 1.5em 0;
+    margin: auto;
+    max-width: 75%;
 }
 
 #main-img {
-
+    border-radius: 5px;
+    margin: auto;
+    max-width: 100%;
 }
 
 h1, h2 {
+    text-shadow: 0 0 8px var(--shadow-color);
     color: var(--header-text-color);
 }
 
@@ -39,33 +47,27 @@ a {
 }
 
 a:hover {
-    color: var(--text-color);
-}
-
-img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    color: #fff;
 }
 
 figure {
-    padding: 1em 0;
     font-size: 0.75em;
 }
 
-#recipes {
+#recipe-container {
     background-color: var(--bg-accent);
     border-radius: 5px;
-    padding: 1.5em;
+    text-align: center;
+    margin: auto;
+    width: 75%;
 }
 
 ul {
-    text-align: left;
-    padding: 0 5em;
+    margin: auto;
+    padding: 0 1em 1em;
 }
 
 li {
-    text-align: center;
     list-style: none;
-    padding: 0.5em 0;
+    padding: 1em 0;
 }
