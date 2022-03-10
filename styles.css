@@ -5,13 +5,18 @@
     --bg-accent: #1a1a1a;
     --text-color: #b3b3b3;
     --header-text-color: #fff;
-    --link-color: #91b7c7;
-    --shadow-color: #91b7c7;
+    --secondary-color: #91b7c7;
     --sitewide-font: 'Rubik'
 }
 
-body {
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    /* box-sizing: border-box; */
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--sitewide-font), Helvetica, sans-serif;
@@ -29,19 +34,24 @@ body {
     max-width: 75%;
 }
 
-#main-img {
+.main-img {
     border-radius: 5px;
-    margin: auto;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 1em;
+    margin-left: auto;
     max-width: 100%;
 }
 
 h1, h2 {
-    text-shadow: 0 0 8px var(--shadow-color);
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-shadow: 0 0 8px var(--secondary-color);
     color: var(--header-text-color);
 }
 
 a {
-    color: var(--link-color);
+    color: var(--secondary-color);
     font-weight: bold;
     text-decoration: none;
 }
@@ -54,20 +64,71 @@ figure {
     font-size: 0.75em;
 }
 
-#recipe-container {
+.recipe-container {
     background-color: var(--bg-accent);
     border-radius: 5px;
     text-align: center;
-    margin: auto;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-left: auto;
+    padding: 1em 1em;
     width: 75%;
 }
 
-ul {
-    margin: auto;
-    padding: 0 1em 1em;
+.recipe-container ul {
+    padding: 1em;
 }
 
-li {
+.recipe-container li {
     list-style: none;
+    line-height: 3em;
+}
+
+.desc-section {
+    width: 80%;
+    margin: 1.5em auto;
+}
+
+#video {
+    display: flex;
+    justify-content: center;
+    margin: 1.5em 0;
+}
+
+.ingredients-and-steps {
+    background-color: var(--bg-accent);
+    border-radius: 5px;
     padding: 1em 0;
+    margin-top: 1em;
+    margin-right: auto;
+    margin-bottom: 2em;
+    margin-left: auto;
+    width: 80%;
+}
+
+.ingredients-and-steps ul {
+    text-align: left;
+    margin: auto 20%;
+}
+
+.ingredients-and-steps ol {
+    text-align: left;
+    margin: auto 20%;
+}
+
+.ingredients-and-steps li {
+    line-height: 2em;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    padding: 0 20px;
+    min-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-top: 2px solid var(--secondary-color)
 }
