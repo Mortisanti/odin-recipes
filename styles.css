@@ -41,9 +41,16 @@ body {
     max-width: 100%;
 }
 
-h1, h2 {
+h1 {
     margin-top: 1em;
     margin-bottom: 1em;
+    text-shadow: 0 0 8px var(--secondary-color);
+    color: var(--header-text-color);
+}
+
+h2 {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
     text-shadow: 0 0 8px var(--secondary-color);
     color: var(--header-text-color);
 }
@@ -64,11 +71,13 @@ figure {
 
 .recipe-container {
     background-color: var(--bg-accent);
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
+    box-shadow: 7px 7px 5px #000;
     text-align: center;
-    margin-top: 1em;
+    margin-top: 2em;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     margin-left: auto;
     padding: 1em 1em;
     width: 75%;
@@ -91,6 +100,7 @@ figure {
 #video-container {
     display: flex;
     justify-content: center;
+    margin: 1.5em 0;
 }
 
 #video {
@@ -100,11 +110,13 @@ figure {
 
 .ingredients-and-steps {
     background-color: var(--bg-accent);
+    border: 1px solid var(--secondary-color);
     border-radius: 5px;
-    padding: 1em 0;
+    box-shadow: 7px 7px 5px #000;
+    padding: 1em 0 3em 0;
     margin-top: 1em;
     margin-right: auto;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
     margin-left: auto;
     width: 80%;
 }
@@ -132,5 +144,5 @@ footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    border-top: 2px solid var(--secondary-color)
+    border-top: 1px solid var(--secondary-color)
 }
