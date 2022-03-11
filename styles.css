@@ -89,7 +89,7 @@ figure {
 
 .recipe-container li {
     list-style: none;
-    line-height: 3em;
+    padding: 1em 0;
 }
 
 .desc-section {
