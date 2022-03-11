@@ -16,14 +16,12 @@
 }
 
 body {
-    /* box-sizing: border-box; */
     background-color: var(--bg-color);
     color: var(--text-color);
     font-family: var(--sitewide-font), Helvetica, sans-serif;
 }
 
 .container {
-    /* bg color for the sake of debugging */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -90,10 +88,14 @@ figure {
     margin: 1.5em auto;
 }
 
-#video {
+#video-container {
     display: flex;
     justify-content: center;
-    margin: 1.5em 0;
+}
+
+#video {
+    max-width: 640px;
+    width: 100%;
 }
 
 .ingredients-and-steps {
